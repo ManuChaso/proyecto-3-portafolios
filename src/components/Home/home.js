@@ -1,5 +1,7 @@
 import './home.css';
 
+import profileImage from '../../../assets/images/perfil.jpg';
+
 export default function RenderHome(){
     
     const app = document.querySelector('#app');
@@ -8,7 +10,7 @@ export default function RenderHome(){
     `
     <div class="home">
         <div class="owner-data">
-            <img class="profile-photo" src="../../assets/images/perfil.jpg" alt="Imagen de perfil">
+            <img class="profile-photo" src=${profileImage} alt="Imagen de perfil">
             <div class="name-job">
                 <h2 class="name">Manu Chaso</h2>
                 <p class="job">Desarrollador web full stack</p>

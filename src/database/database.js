@@ -1,35 +1,41 @@
+import image1 from '../../assets/images/tienda2.jpg';
+import image2 from '../../assets/images/gestorTareas.jpg';
+import image3 from '../../assets/images/cursos.jpg';
+import image4 from '../../assets/images/redSocial.jpg';
+import image5 from '../../assets/images/tienda.jpg';
+
 export const DataBase = {
     "projects":[
         {
-            "image": "../../assets/images/tienda2.jpg",
+            "image": image1,
             "name": "Replica Heretics",
             "description": "Replica de la tienda oficial del equipo de Esports Heretics",
             "linkgit": "https://github.com/ManuChaso/Proyecto-1-pagina-responsive",
             "linkweb": "https://polite-tarsier-7bef2d.netlify.app"
           },
           {
-            "image": "../../assets/images/gestorTareas.jpg",
+            "image": image2,
             "name": "Gestor de tareas",
             "description": "Aplicación web que permite gestionar y organizar tareas",
             "linkgit": "",
             "linkweb": ""
           },
           {
-            "image": "../../assets/images/cursos.jpg",
+            "image": image3,
             "name": "Plataforma de aprendizaje en línea",
             "description": "Plataforma web para cursos y material educativo en línea",
             "linkgit": "",
             "linkweb": ""
           },
           {
-            "image": "../../assets/images/redSocial.jpg",
+            "image": image4,
             "name": "Red social temática",
             "description": "Red social enfocada en una temática específica, con perfiles de usuario y publicaciones",
             "linkgit": "",
             "linkweb": ""
           },
           {
-            "image": "../../assets/images/tienda.jpg",
+            "image": image5,
             "name": "Tienda en línea",
             "description": "Tienda en línea para la venta de productos o servicios",
             "linkgit": "https://github.com/ManuChaso/Proyecto-2-tienda-dinamica",
