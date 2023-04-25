@@ -17,14 +17,17 @@ menuButton.addEventListener('click', showMobileMenu);
 document.querySelectorAll('.nav-link').forEach(link =>{
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const linkHref = e.target.href;
-        console.log('El link apunta a: ', linkHref);
 
-        history.pushState(null, null, linkHref);
+        if(e.target.href != window.location.href){
+            const linkHref = e.target.href;
+            console.log('El link apunta a: ', linkHref);
 
-        showMobileMenu();
-        startAnimation();
-        router();
+            history.pushState(null, null, linkHref);
+
+            showMobileMenu();
+            startAnimation();
+            router();
+        }
     });
 });
 
