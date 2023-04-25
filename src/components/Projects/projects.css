@@ -1,0 +1,127 @@
+.project-list{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+@media screen and (min-width: 1100px) {
+    .project-title{
+        font-family: 'BrunoAce';
+        font-size: 30px;
+        color: var(--cian);
+        margin-bottom: 50px;
+    }
+    .project{
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+    }
+    .project.complete{
+        opacity: 1;
+    }
+    .project:hover .project-image,
+    .project:hover .project-name{
+        display: none;
+    }
+    .project:hover .project-description,
+    .project:hover .web-links{
+        display: flex;
+    }
+    .project-image{
+        width: 340px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .project-name{
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        text-align: center;
+        color: var(--cian);
+        margin: 10px;
+    }
+    .project-description{
+        display: none; 
+        width: 80%;
+        font-family: 'BrunoAce';
+        font-size: 20px;
+        text-align: center;
+        color: var(--cian);
+    }
+    .web-links{
+        display: none;
+        width: 90%;
+        height: 30%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .web-links a{
+        font-family: 'BrunoAce';
+        font-size: 17px;
+        border-bottom: 1px solid var(--cian);
+        color: var(--cian);
+    }
+    .web-links a:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .project-title{
+        font-family: 'BrunoAce';
+        font-size: 20px;
+        color: var(--cian);
+        margin-bottom: 50px;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+    } 
+    .project-image{
+        width: 340px;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    .project-name{
+        font-family: 'BrunoAce';
+        font-size: 18px;
+        text-align: center;
+        color: var(--cian);
+        margin: 10px;
+    }
+    .project-description{
+        display: flex; 
+        width: 80%;
+        margin-bottom: 15px;
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        text-align: center;
+        color: var(--cian);
+    }
+    .web-links{
+        display: flex;
+        width: 90%;
+        height: 30%;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .web-links a{
+        font-family: 'BrunoAce';
+        font-size: 14px;
+        color: var(--cian);
+        border-bottom: 1px solid white;
+    }
+}

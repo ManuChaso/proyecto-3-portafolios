@@ -1,0 +1,128 @@
+
+
+@media screen and (min-width: 850px) {
+    .home{
+        width: 60%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+        /*background-color: var(--electric-blue);*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        transform: translateX(100%);
+        animation: spawn 0.3s ease-out forwards;
+    }
+    .owner-data{
+        display: flex;
+        align-items: center;
+    }
+    .profile-photo{
+        width: 30%;
+        margin: 20px auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+    }
+    .name-job{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .name{
+        font-family: 'BrunoAce';
+        font-size: 40px;
+        color: var(--cian);
+    }
+    .job{
+        font-family: 'BrunoAce';
+        font-size: 25px;
+        color: var(--cian);
+    }
+    .home-description{
+        width: 90%;
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        color: var(--cian);
+    }
+    .social-media-links{
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 10vh;
+    }
+    .social-media-links a{
+        font-family: 'BrunoAce';
+        font-size: 25px;
+        color: var(--cian);
+        cursor: pointer;
+    }
+    .social-media-links a:hover{
+        color: white;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .home{
+        width: 90%;
+        height: 100%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .owner-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo{
+        width: 65%;
+        margin: 10px auto;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+    }
+    .name-job{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+    .name{
+        font-family: 'BrunoAce';
+        font-size: 25px;
+        color: var(--cian);
+    }
+    .job{
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        color: var(--dark-grey);
+    }
+    .home-description{
+        width: 95%;
+        font-family: 'BrunoAce';
+        font-size: 10px;
+        color: var(--cian);
+    }
+    .social-media-links{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-media-links a{
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        color: var(--cian);
+        cursor: pointer;
+    }
+    .social-media-links a:hover{
+        color: white;
+    }
+    
+}

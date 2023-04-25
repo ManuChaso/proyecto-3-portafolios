@@ -1,0 +1,200 @@
+.experience-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .experience-title{
+        font-family: 'BrunoAce';
+        font-size: 30px;
+        color: var(--cian);
+        margin-bottom: 50px;
+    }
+    .experience{
+        width: 70%;
+        height: 330px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .experience.complete{
+        opacity: 1;
+    }
+    .logo-name-date{
+        display: flex;
+        width: 100%;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .name-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100px;
+    }
+    .name-title p{
+        font-family: 'BrunoAce';
+        font-size: 20px;
+        margin-left: 20px;
+        color: var(--cian);
+    }
+    .date{
+        font-family: 'BrunoAce';
+        font-size: 12px;
+        color: var(--cian);
+        width: 20%;
+        margin-top: 10px;
+    }
+    .responsibilities-description{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        width: 100%;
+        font-family: 'BrunoAce';
+    }
+    .responsibilities-description h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: var(--cian);
+    }
+    .responsibilities{
+        width: 45%;
+    }
+    .responsibilities ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--cian);
+    }
+    .description{
+        width: 45%;
+    }
+    .description p{
+        font-size: 13px;
+        color: var(--cian);
+    }
+    .page-link{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: var(--cian);
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        border-bottom: 1px solid var(--cian);
+    }
+    .page-link:hover{
+        color: white;
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .experience-title{
+        font-family: 'BrunoAce';
+        font-size: 20px;
+        color: var(--cian);
+        margin-bottom: 50px;
+    }
+    .experience{
+        width: 90%;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px var(--cian);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-name-date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .name-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    .name-title p{
+        width: 100%;
+        text-align: center;
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        color: var(--cian);
+    }
+    .date{
+        font-family: 'BrunoAce';
+        font-size: 12px;
+        margin-top: 10px;
+        margin: 10px 10px;
+        color: var(--cian);
+    }
+    .responsibilities-description{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        font-family: 'BrunoAce';
+    }
+    .responsibilities-description h2{
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: var(--cian);
+    }
+    .responsibilities{
+        width: 90%;
+    }
+    .responsibilities ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--cian);
+    }
+    .description{
+        width: 90%;
+    }
+    .description p{
+        font-size: 13px;
+        color: var(--cian);
+    }
+    .page-link{
+        width: 200px;
+        height: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: black;
+        font-family: 'BrunoAce';
+        font-size: 15px;
+        color: var(--cian);
+        border-bottom: 1px solid black;
+    }
+}
